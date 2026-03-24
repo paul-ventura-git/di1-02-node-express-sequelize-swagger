@@ -1,4 +1,4 @@
-/*
+
 require('dotenv').config();
 const path = require('path');
 
@@ -19,7 +19,7 @@ module.exports = {
   }
 };
 
-
+/*
 require('dotenv').config();
 const path = require('path');
 
@@ -43,7 +43,7 @@ module.exports = {
     dialect: 'postgres'
   }
 };
-*/
+
 
 require('dotenv').config();
 const path = require('path');
@@ -70,3 +70,5 @@ module.exports = {
     dialect: 'mysql'
   }
 };
+
+*/
