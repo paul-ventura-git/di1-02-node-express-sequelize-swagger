@@ -7,7 +7,7 @@ module.exports = {
       date: { type: Sequelize.DATE, allowNull: false },
       reason: { type: Sequelize.STRING },
       patient_id: { type: Sequelize.INTEGER, allowNull: false, references: { model: 'Patients', key: 'id' }, onDelete: 'CASCADE' },
-      medic_id: { type: Sequelize.INTEGER, allowNull: false, references: { model: 'Medics', key: 'id' }, onDelete: 'SET NULL' },
+      medic_id: { type: Sequelize.INTEGER, allowNull: false, references: { model: 'Medics', key: 'id' }, onDelete: 'CASCADE' },
       createdAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
       updatedAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') }
     });

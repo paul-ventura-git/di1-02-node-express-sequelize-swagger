@@ -1,4 +1,4 @@
-
+/*
 require('dotenv').config();
 const path = require('path');
 
@@ -18,18 +18,18 @@ module.exports = {
     dialect: 'postgres'
   }
 };
+*/
 
-/*
 require('dotenv').config();
 const path = require('path');
 
 module.exports = {
   development: {
-    username: process.env.DB_USER || 'postgres',
+    username: 'postgres',
     password: process.env.DB_PASS || '123',
-    database: process.env.DB_NAME || 'sequelize_nodejs_example',
+    database: process.env.DB_NAME || 'node_sequelize',
     host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || 5432,
+    port: process.env.DB_PORT || 5433,
     dialect: 'postgres',
     logging: false
   },
@@ -44,7 +44,7 @@ module.exports = {
   }
 };
 
-
+/*
 require('dotenv').config();
 const path = require('path');
 
@@ -70,5 +70,4 @@ module.exports = {
     dialect: 'mysql'
   }
 };
-
 */
