@@ -29,7 +29,7 @@ module.exports = {
     password: process.env.DB_PASS || '123',
     database: process.env.DB_NAME || 'node_sequelize',
     host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || 5433,
+    port: process.env.DB_PORT || 5432,
     dialect: 'postgres',
     logging: false
   },
